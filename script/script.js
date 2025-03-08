@@ -103,19 +103,19 @@ document.addEventListener('contextmenu', function(e) {
     showNotification("Congratulations! You just discovered… nothing. Right-click is off-limits.");
 });
 
-// document.addEventListener('keydown', function(e) {
-//     if (e.key === 'F12' || 
-//         (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i'|| e.key === 'J'|| e.key === 'j')))  {
-//         e.preventDefault();
-//         showNotification("Inspecting my portfolio? You must be curious!");
-//     }
-//     if (e.ctrlKey && (e.key === 'U' || e.key =='u')){
-//         e.preventDefault()
-//         showNotification(`You are
-//         Curious, aren’t you? I get it, but there’s nothing exciting in this code—just a bunch of tired HTML and CSS working overtime. Go grab a coffee instead, you’ve earned it!`);
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'F12' || 
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i'|| e.key === 'J'|| e.key === 'j')))  {
+        e.preventDefault();
+        showNotification("Inspecting my portfolio? You must be curious!");
+    }
+    if (e.ctrlKey && (e.key === 'U' || e.key =='u')){
+        e.preventDefault()
+        showNotification(`You are
+        Curious, aren’t you? I get it, but there’s nothing exciting in this code—just a bunch of tired HTML and CSS working overtime. Go grab a coffee instead, you’ve earned it!`);
 
-//     }
-// });
+    }
+});
 
 
 function showNotification(message) {
