@@ -529,7 +529,8 @@ function copyEmail() {
       const notification = document.getElementById("copy-notification");
       notification.classList.remove("hidden");
       notification.classList.add("show");
-  alert("LLLLL")
+alert("Email copied")
+  alert("I trust it's for good news and great opportunities!")
       setTimeout(() => {
         notification.classList.remove("show");
         setTimeout(() => {
