@@ -353,7 +353,7 @@ function showNotification(message) {
             const botMessage = document.createElement("div");
             botMessage.classList.add("bot");
         
-            const defaultMessage = "Welcome! You're now chatting with Manoj's code—it's doing all the hard work while Manoj daydreams about becoming a professional meme creator.\n\n"
+            const defaultMessage = "Welcome! You're now chatting with Manoj's code—it's doing all the hard work while Manoj daydreams about becoming a professional filmmaker.\n\n"
             botMessage.innerText = defaultMessage;
             chatMessages.appendChild(botMessage);
             chatMessages.scrollTop = chatMessages.scrollHeight;
