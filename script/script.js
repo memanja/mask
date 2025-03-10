@@ -134,7 +134,7 @@ function showNotification(message) {
 
         // Add Event Listener for Ctrl + D
         document.addEventListener('keydown', function(event) {
-            if (event.ctrlKey && event.key === 'd') { // Ctrl + D
+            if (event.ctrlKey && (event.key === 'D' || event.key =='d')) { // Ctrl + D
                 openDanceParty();
                 event.preventDefault(); // Prevent default browser behavior
             }
